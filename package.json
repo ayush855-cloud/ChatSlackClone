@@ -1,6 +1,6 @@
 {
   "name": "slack-clone",
-  "homepage": "http://ayush855-cloud.github.io/slack-clone",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {

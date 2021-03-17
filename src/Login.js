@@ -24,7 +24,7 @@ function Login() {
         <div className="login__container">
             <img src="https://talkingpointz.com/wp-content/uploads/2019/10/Slack.logo2_.jpg" alt="" />
         
-           <h1>Sign in to Bharati Vidyapeeth</h1>
+           <h1>Welcome To Tech Community</h1>
            <p>Bharati Vidyapeeth College of Engineering</p> 
            <Button onClick={signIn}>Sign In with Google</Button>
            </div>

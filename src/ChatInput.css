@@ -8,8 +8,8 @@
 }
 .chat__input > form > input{
     position: fixed;
-    bottom: 30px;
-    width: 70%;
+    bottom: 37px;
+    width: 68%;
     border-radius: 3px;
     border: 1px solid gray;
     padding: 20px;
@@ -17,3 +17,30 @@
 .chat__input > form > button{
     display: none !important;
 }
+@media screen and (max-width:500px){
+     .inputs{
+         position: relative;
+         right: 8px;
+         bottom: 23px!important;
+         width: 55% !important;
+     }
+}
+@media screen and (max-width:445px){
+    .inputs{
+        position: relative;
+        width: 60% !important;
+        right: 9px !important;
+        bottom: 30px !important;
+    }
+}
+@media screen and (max-width:360px){
+    .inputs{
+        width: 58% !important;
+    }
+}
+@media screen and (max-width:330px){
+    .inputs{
+        width: 49% !important;
+    }
+}
+

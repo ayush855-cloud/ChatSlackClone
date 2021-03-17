@@ -24,7 +24,9 @@ function Sidebar() {
             setChannel(snapshot.docs.map((doc)=>({
                    id:doc.id,
                    name:doc.data().name,
-            }))
+            })
+                
+            )
             )
         )
     }, []);
@@ -36,8 +38,8 @@ function Sidebar() {
                     <h3><FiberManualRecord className="dot" />{user?.displayName}</h3>
                 </div>
                 <CreateIcon />
-
             </div>
+           
             <SidebarOption Icon={InsertCommentIcon} title="Threads" />
             <SidebarOption Icon={InboxIcon} title="Mentions and reactions" />
             <SidebarOption Icon={DraftsIcon} title="Saved Items" />
@@ -50,7 +52,7 @@ function Sidebar() {
             <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
             <SidebarOption Icon={AddIcon} addChannelOption title="Add Channel" />
             {channels.map((channel)=>{
-                return <SidebarOption title={channel.name} id={channel.id} />
+                return <SidebarOption title={channel.name}s id={channel.id} />
             })}
         </div>
     )

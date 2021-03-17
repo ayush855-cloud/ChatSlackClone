@@ -21,16 +21,20 @@
     background-color: #421f44;
     display: flex;
     align-items: center;
-    padding: 0px 50px;
+    padding: 3px 50px;
     color: gray;
     border: 2px solid gray;
-    border-radius: 6px;
+    border-radius: 999px;
 }
 .header__search > input{
     background-color: transparent;
     border: none;
     text-align: center;
     min-width: 35vw;
+}
+.header__search > input:focus{
+    border: none; 
+     outline: none;
 }
 .header__right{
     flex: 0.3;
@@ -41,4 +45,29 @@
 .header__right > .MuiSvgIcon-root{
     margin-left: auto;
     margin-right: 20px;
+}
+@media screen and (max-width:445px){
+    .header{
+        width: 120%;
+    }
+}
+@media screen and (max-width:360px){
+    .header{
+        width: 130% !important;
+    }
+}
+@media screen and (max-width:330px){
+    .header{
+        width: 150% !important;
+    }
+}
+@media screen and (max-width:300px){
+    .header{
+        width: 160% !important;
+    }
+}
+@media screen and (max-width:278px){
+    .header{
+        width:180% !important;
+    }
 }

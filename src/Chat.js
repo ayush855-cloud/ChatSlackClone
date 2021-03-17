@@ -16,7 +16,10 @@ function Chat() {
         if (roomId) {
             db.collection('rooms').doc(roomId).onSnapshot((snapshot) => {
                 setRoomDetails(snapshot.data());
+                // console.log(snapshot.data().name);
+
             })
+            
         }
         db.collection('rooms').doc(roomId).collection('messages').orderBy('timestamp', 'asc').onSnapshot((snp) => {
             setRoomMessages(snp.docs.map(doc => doc.data()))

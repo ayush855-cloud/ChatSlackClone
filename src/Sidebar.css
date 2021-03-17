@@ -6,6 +6,9 @@
     overflow: scroll;
     border: 1px solid #49274b;
 }
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
 .sidebar > hr{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -49,4 +52,35 @@
     align-items: center ;
     font-size: 13px;
     font-weight: 400;
+}
+@media screen and (max-width: 500px){
+    .sidebar{
+        
+        flex: 0.5 !important;
+    }
+}
+@media screen and (max-width:445px){
+    .sidebar{
+        flex: 0.6 ;
+        height: 130vh !important;
+    }
+}
+@media screen and (max-width:442px){
+    .sidebar{
+        flex: 0.5 !important;
+    }
+}
+@media screen and (max-width:360px){
+    .sidebar{
+        flex: 0.6 !important;
+        height: 200vh !important;
+    }
+    .sidebar::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+@media screen and (max-width:330px){
+    .sidebar{
+        flex: 0.7 !important;
+    }
 }

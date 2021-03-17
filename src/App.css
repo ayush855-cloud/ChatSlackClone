@@ -6,4 +6,5 @@ body{
 .app__body{
     display: flex;
     height:100vh;
+    min-width: fit-content;
 }

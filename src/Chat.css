@@ -6,6 +6,8 @@
 }
 .chat__header{
     display: flex;
+    flex: 1;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -28,4 +30,34 @@
 chat__channelName > .MuiSvgIcon-root{
     margin-left: 10px;
     font-size: 10px;
+}
+
+
+@media screen and (max-width:442px){
+    .chat{
+        /* min-width: fit-content !important; */
+    width: 150% !important;
+    flex-grow: 1 !important;
+    }
+
+}
+@media screen and (max-width:360px){
+    .chat{
+        /* min-width: fit-content !important; */
+        flex: 0.4 !important;
+        flex-grow: 1 !important;
+    }
+}
+@media screen and (max-width:330px){
+    .chat__messages{
+        height: 80vh;
+        width: 100vw;
+    }
+    .chat__messages::-webkit-scrollbar{
+        display: none;
+    }
+    .chat__header{
+        flex: 1;
+        flex-grow: 1;
+    }
 }

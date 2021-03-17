@@ -24,4 +24,8 @@
     text-transform: capitalize !important;
     color: white;
     background-color: #0a8d48 !important;
+    border-radius: 999px;
+    padding: 10px 15px;
+    font-size: large;
+    letter-spacing: 1px;
 }
